@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/edhongpc.github.io',
   plugins: [svelte()],
   build: {
-    outDir: './docs', // relative to index.html
+    outDir: '../docs', // relative to index.html
     // emptyOutDir: true, // true if outDir is inside root. if outDir is not inside root, uncomment this.
   }
 })
