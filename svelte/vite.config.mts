@@ -5,5 +5,10 @@ import 'npm:svelte@^3.54.0'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()]
+  base: '/edhongpc.github.io',
+  plugins: [svelte()],
+  build: {
+    outDir: './docs', // relative to index.html
+    // emptyOutDir: true, // true if outDir is inside root. if outDir is not inside root, uncomment this.
+  }
 })
